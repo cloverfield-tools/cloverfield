@@ -1,0 +1,26 @@
+{
+  "name": "cloverfield",
+  "version": "0.1.0",
+  "description": "A next generation JavaScript project boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ericelliott/cloverfield.git"
+  },
+  "keywords": [
+    "Boilerplate",
+    "JavaScript",
+    "Node",
+    "Browser",
+    "Isomorphic"
+  ],
+  "author": "Eric Elliott et al...",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ericelliott/cloverfield/issues"
+  },
+  "homepage": "https://github.com/ericelliott/cloverfield"
+}
