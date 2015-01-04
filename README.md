@@ -1,5 +1,4 @@
-Cloverfield
-===========
+# Cloverfield Boilerplate Scaffold Generator
 
 Cloverfield is a greenfield next-generation JavaScript project boilerplate. Or, it will be. Please help us decide what this will be by looking at the [open issues](https://github.com/ericelliott/cloverfield/issues).
 
