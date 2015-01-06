@@ -24,6 +24,9 @@ Because yo generators suck. They install everything including the kitchen sink, 
 
 In other words, having all the choices made for you is bad. **Having all the meaningless choices made for you is better.**
 
+The tech selections don't matter **at all** as long as developers love to use our tools. In fact, it might turn out that we use yo generators under the hood (if that makes sense) and `cf` *simply selects generators for you that don't suck.*
+
+
 ## Didn't the monster in the movie die?
 
 Think of this like an ice sculpture. It will have its season, and then something better will come along. That's ok.
