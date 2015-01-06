@@ -27,11 +27,6 @@ In other words, having all the choices made for you is bad. **Having all the mea
 The tech selections don't matter **at all** as long as developers love to use our tools. In fact, it might turn out that we use yo generators under the hood (if that makes sense) and `cf` *simply selects generators for you that don't suck.*
 
 
-## Didn't the monster in the movie die?
-
-Think of this like an ice sculpture. It will have its season, and then something better will come along. That's ok.
-
-
 ## Wasn't Cloverfield a gigantic monster?
 
 Yeah, we're going to avoid giving you a whole bunch of crap you may never need, and instead concentrate on just the basics that **almost every JavaScript app will need.** It'll be modular. You'll be able to pick and chose which selections you want to scaffold out, but there will be a lot of options available. In the real world, production apps are big. Get over it. This isn't an app, anyway, it's a way for you to quickly get started on any JavaScript project.
