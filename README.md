@@ -18,6 +18,12 @@ Cloverfield should be prescriptive about chosing the right tooling, with an emph
 Cloverfield should not be strongly tied to any particular framework-of-the-minute. That means Angular, Ember, Meteor -- you're out of luck. But don't dispair... frameworks are not the only way forward. We'll lean heavily toward established web standards, and help you figure out how to integrate them smoothly with your framework of choice.
 
 
+## Why do we need yet another boilerplate / generator / scaffoldy thing?
+
+Because yo generators suck. They install everything including the kitchen sink, and are usually married for eternity to some framework-of-the-minute. Choosing to use a generator shouldn't mean that you're opting into a billion things. We should be able to say `$ cf test` and *no matter which framework we're using, a sensible test framework should be scaffolded for us with some sample tests that can successfully run headless or against something like Sauce Labs out of the box.*
+
+In other words, having all the choices made for you is bad. **Having all the meaningless choices made for you is better.**
+
 ## Didn't the monster in the movie die?
 
 Think of this like an ice sculpture. It will have its season, and then something better will come along. That's ok.
