@@ -1,6 +1,6 @@
 # Cloverfield Boilerplate Scaffold Generator
 
-Cloverfield is a greenfield next-generation JavaScript project boilerplate. Or, it will be. Please help us decide what this will be by looking at the [open issues](https://github.com/ericelliott/cloverfield/issues).
+Cloverfield is a greenfield next-generation JavaScript project boilerplate scaffold generator. Or, it will be. Please help us decide what this will be by looking at the [open issues](https://github.com/ericelliott/cloverfield/issues).
 
 
 ## Why Cloverfield?
@@ -15,12 +15,12 @@ Cloverfield should be prescriptive about chosing the right tooling, with an emph
 
 ## What should Cloverfield not be?
 
-Cloverfield should not be strongly tied to any particular framework-of-the-minute. That means Angular, Ember, Meteor -- you're out of luck. But don't dispair... frameworks are not the only way forward. We'll lean heavily toward established web standards, and help you figure out how to integrate them smoothly with your framework of choice.
+Cloverfield should not be strongly tied to any particular framework-of-the-minute. That means Angular, Ember, Meteor people, try to contribute in a way that the rest of the community can benefit from. We'll lean heavily toward established web standards, and help you figure out how to integrate them smoothly with **your framework of choice.**
 
 
 ## Why do we need yet another boilerplate / generator / scaffoldy thing?
 
-Because yo generators suck. They install everything including the kitchen sink, and are usually married for eternity to some framework-of-the-minute. Choosing to use a generator shouldn't mean that you're opting into a billion things. We should be able to say `$ cf test` and *no matter which framework we're using, a sensible test framework should be scaffolded for us with some sample tests that can successfully run headless or against something like Sauce Labs out of the box.*
+Because yo generators tend to install everything including the kitchen sink, and are usually married for eternity to some framework-of-the-minute. Choosing to use a generator shouldn't mean that you're opting into a billion things. We should be able to say `$ cf test` and *no matter which framework we're using, a sensible test framework should be scaffolded for us with some sample tests that can successfully run headless or against something like Sauce Labs out of the box.*
 
 In other words, having all the choices made for you is bad. **Having all the meaningless choices made for you is better.**
 
@@ -36,6 +36,8 @@ Think of it as Yoeman without the obnoxious cruft you never wanted in the first 
 We're not going to let you chose from everything ever made available on npm. That's what `npm` is for. We're going to pick the technologies that are really solid choices, and will likely remain really solid choices for a long time.
 
 Think of it as a gigantic monster than can turn itself into a nimble jaguar. It is what you want it to be, and no more, and we won't overwhelm you with a crazy number of options. We'll pick the best and fewest tools possible in each category and move on.
+
+In other words, it's easy access to a collection of *modules, tools, and configurations curated by experts, and vetted by the community,* so you don't have to go digging for a needle in the gigantic heystack that is npm. We do the heavy foundation work for you so you can get down to what you do best: building amazing things.
 
 Welcome to the field.
 
