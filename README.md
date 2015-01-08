@@ -37,7 +37,7 @@ We're not going to let you chose from everything ever made available on npm. Tha
 
 Think of it as a gigantic monster than can turn itself into a nimble jaguar. It is what you want it to be, and no more, and we won't overwhelm you with a crazy number of options. We'll pick the best and fewest tools possible in each category and move on.
 
-In other words, it's easy access to a collection of *modules, tools, and configurations curated by experts, and vetted by the community,* so you don't have to go digging for a needle in the gigantic heystack that is npm. We do the heavy foundation work for you so you can get down to what you do best: building amazing things.
+In other words, it's easy access to a collection of *modules, tools, and configurations curated by experts, and vetted by the community,* so you don't have to go digging for a needle in the gigantic haystack that is npm. We do the heavy foundation work for you so you can get down to what you do best: building amazing things.
 
 Welcome to the field.
 
