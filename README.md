@@ -1,6 +1,8 @@
 # Cloverfield Boilerplate Scaffold Generator
 
-Cloverfield is a greenfield next-generation JavaScript project boilerplate scaffold generator. Or, it will be. Please help us decide what this will be by looking at the [open issues](https://github.com/ericelliott/cloverfield/issues).
+Cloverfield aims to create a greenfield, next generation JavaScript project boilerplate scaffolding tool. That means we'll use the tools that coders in-the-know will be using over the next 1 - 3 years. We're starting with the 2016 edition. [Read more](https://github.com/ericelliott/cloverfield/blob/master/README.md).
+
+Please help us decide what this will be by looking at the [open issues](https://github.com/ericelliott/cloverfield/issues).
 
 
 ## Why Cloverfield?
@@ -15,7 +17,7 @@ Cloverfield should be prescriptive about chosing the right tooling, with an emph
 
 ## What should Cloverfield not be?
 
-Cloverfield should not be strongly tied to any particular framework-of-the-minute. That means Angular, Ember, Meteor people, try to contribute in a way that the rest of the community can benefit from. We'll lean heavily toward established web standards, and help you figure out how to integrate them smoothly with **your framework of choice.**
+Cloverfield should not be strongly tied to any particular framework-of-the-minute. Angular, Ember, Meteor users, please try to contribute in a way that the rest of the community can benefit from. We'll lean heavily toward established web standards, and help you figure out how to integrate them smoothly with **your framework of choice.**
 
 
 ## Why do we need yet another boilerplate / generator / scaffoldy thing?
