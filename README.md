@@ -44,4 +44,4 @@ In other words, it's easy access to a collection of *modules, tools, and configu
 Welcome to the field.
 
 Eric Elliott
-Author, ["Programming JavaScript Applications"](http://chimera.labs.oreilly.com/books/1234000000262) (O'Reilly)
+Author, ["Programming JavaScript Applications"](https://ericelliottjs.com/product/programming-javascript-applications-paper-ebook-bundle/) (O'Reilly)
