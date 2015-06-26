@@ -30,20 +30,6 @@ In other words, having all the choices made for you is bad. **Having all the mea
 
 The tech selections don't matter **at all** as long as developers love to use our tools. In fact, it might turn out that we use yo generators under the hood (if that makes sense) and `cf` *simply selects generators for you that don't suck.*
 
+---
 
-## Wasn't Cloverfield a gigantic monster?
-
-Yeah, we're going to avoid giving you a whole bunch of crap you may never need, and instead concentrate on just the basics that **almost every JavaScript app will need.** It'll be modular. You'll be able to pick and chose which selections you want to scaffold out, but there will be a lot of options available. In the real world, production apps are big. Get over it. This isn't an app, anyway, it's a way for you to quickly get started on any JavaScript project.
-
-Think of it as Yoeman without the obnoxious cruft you never wanted in the first place. Using a typical `yo` generator is like trying to coax a kitten out of a tree with a cannon. We won't be doing that.
-
-We're not going to let you chose from everything ever made available on npm. That's what `npm` is for. We're going to pick the technologies that are really solid choices, and will likely remain really solid choices for a long time.
-
-Think of it as a gigantic monster than can turn itself into a nimble jaguar. It is what you want it to be, and no more, and we won't overwhelm you with a crazy number of options. We'll pick the best and fewest tools possible in each category and move on.
-
-In other words, it's easy access to a collection of *modules, tools, and configurations curated by experts, and vetted by the community,* so you don't have to go digging for a needle in the gigantic haystack that is npm. We do the heavy foundation work for you so you can get down to what you do best: building amazing things.
-
-Welcome to the field.
-
-Eric Elliott
-Author, ["Programming JavaScript Applications"](https://ericelliottjs.com/product/programming-javascript-applications-paper-ebook-bundle/) (O'Reilly)
+Concieved for ["Learn JavaScript with Eric Elliott"](https://ericelliottjs.com/)
