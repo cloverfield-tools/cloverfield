@@ -7,12 +7,16 @@ Please help us decide what this will be by looking at the [open issues](https://
 
 ## Why Cloverfield?
 
+> "Simplicity is about subtracting the obvious, and adding the meaningful." - John Maeda
+
+Developers spend too much time making tech selections that ultimately have very little to do with the app they're building. Cloverfield's recommended tech selections are curated by experts who have built many apps used by millions of people.
+
 Every project has to start somewhere. So why not start with a project that already has best-in-class static analysis tools, task runners, easy test framework setup, painless [universal JavaScript application](https://leanpub.com/learn-javascript-react-nodejs-es6/) framework, and just the right number of folders and scaffolds with just the right names?
 
 
 ## What should Cloverfield be?
 
-Cloverfield should be prescriptive about chosing the right tooling, with an emphasis on flexibility looking into the future.
+Cloverfield should be prescriptive about chosing the right tooling, with an emphasis on flexibility looking into the future. It should help users make good choices that build on web platform standards that will survive long term, not get thrown away with last year's fashions.
 
 
 ## What should Cloverfield not be?
