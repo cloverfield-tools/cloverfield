@@ -28,7 +28,7 @@ Any scaffolds for specific library ecosystems should use the library in the titl
 
 ## Why do we need yet another boilerplate / generator / scaffoldy thing?
 
-The yo generator ecosystem is aging, and the tools used by yo generators don't fit easily into modern JavaScript application workflows. Yoeman backed Bower for front-end tooling instead of looking to the future of universal JavaScript apps and standard ES6 modules packaged on npm. Bower's share of the package repo market is miniscule. It's clear that the future belongs to npm.
+The yo generator ecosystem is aging, and the tools used by yo generators don't fit easily into modern JavaScript application workflows. Yeoman backed Bower for front-end tooling instead of looking to the future of universal JavaScript apps and standard ES6 modules packaged on npm. Bower's share of the package repo market is miniscule. It's clear that the future belongs to npm.
 
 
 ---
