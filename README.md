@@ -24,11 +24,8 @@ Any scaffolds for specific library ecosystems should use the library in the titl
 
 ## Why do we need yet another boilerplate / generator / scaffoldy thing?
 
-Because yo generators tend to install everything including the kitchen sink, and are usually married for eternity to some framework-of-the-minute. Choosing to use a generator shouldn't mean that you're opting into a billion things. We should be able to say `$ cf test` and *no matter which framework we're using, a sensible test framework should be scaffolded for us with some sample tests that can successfully run headless or against something like Sauce Labs out of the box.*
+The yo generator ecosystem is aging, and the tools used by yo generators don't fit easily into modern JavaScript application workflows. Yoeman backed Bower for front-end tooling instead of looking to the future of universal JavaScript apps and standard ES6 modules packaged on npm. Bower's share of the package repo market is miniscule. It's clear that the future belongs to npm.
 
-In other words, having all the choices made for you is bad. **Having all the meaningless choices made for you is better.**
-
-The tech selections don't matter **at all** as long as developers love to use our tools. In fact, it might turn out that we use yo generators under the hood (if that makes sense) and `cf` *simply selects generators for you that don't suck.*
 
 ---
 
