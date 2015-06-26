@@ -7,7 +7,7 @@ Please help us decide what this will be by looking at the [open issues](https://
 
 ## Why Cloverfield?
 
-Every project has to start somewhere. So why not start with a project that already has best-in-class static analysis tools, task runners, easy test framework setup, painless isomorphic application framework, and just the right number of folders and scaffolds with just the right names?
+Every project has to start somewhere. So why not start with a project that already has best-in-class static analysis tools, task runners, easy test framework setup, painless [universal JavaScript application](https://leanpub.com/learn-javascript-react-nodejs-es6/) framework, and just the right number of folders and scaffolds with just the right names?
 
 
 ## What should Cloverfield be?
@@ -18,6 +18,8 @@ Cloverfield should be prescriptive about chosing the right tooling, with an emph
 ## What should Cloverfield not be?
 
 Cloverfield should not be strongly tied to any particular framework-of-the-minute. Angular, Ember, Meteor users, please try to contribute in a way that the rest of the community can benefit from. We'll lean heavily toward established web standards, and help you figure out how to integrate them smoothly with **your framework of choice.**
+
+Any scaffolds for specific library ecosystems should use the library in the title, e.g.: `cf-react-application`
 
 
 ## Why do we need yet another boilerplate / generator / scaffoldy thing?
