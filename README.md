@@ -4,7 +4,7 @@ Cloverfield aims to create a greenfield, next generation JavaScript project boil
 
 Please help us decide what this will be by looking at the [open issues](https://github.com/ericelliott/cloverfield/issues).
 
-## cf command-line tool
+## cf CLI
 
 ![cli-framework](https://cloud.githubusercontent.com/assets/175264/8508012/c64cd7c4-22a1-11e5-8ee0-69aeb5219f51.gif)
 
