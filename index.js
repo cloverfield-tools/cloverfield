@@ -8,6 +8,7 @@ import path from 'path';
 
 // Find all available scaffolds
 const scaffolds = {};
+
 glob.sync('scaffold/*/', {realpath: true})
   .forEach(pkg => scaffolds[path.basename(pkg)] = pkg);
 

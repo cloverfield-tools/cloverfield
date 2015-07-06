@@ -15,6 +15,7 @@ const schema = {
     }
   }
 };
+
 prompt.message = '>'.green;
 prompt.delimiter = ' ';
 prompt.colors = false;
@@ -29,7 +30,7 @@ const scaffold = () => {
 
 // Check if script is run directly
 if (require.main === module) {
-  scaffold(parse())
+  scaffold(parse());
 }
 
 
