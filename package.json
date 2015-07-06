@@ -3,7 +3,13 @@
   "version": "0.1.1",
   "description": "A next generation JavaScript project boilerplate",
   "main": "index.js",
+  "bin": {
+    "cloverfield": "index.js",
+    "cf": "index.js",
+    "cf-package": "scaffold/package/index.js"
+  },
   "scripts": {
+    "lint": "eslint .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,12 +21,22 @@
     "JavaScript",
     "Node",
     "Browser",
-    "Isomorphic"
+    "Isomorphic",
+    "Universal"
   ],
   "author": "Eric Elliott et al...",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/ericelliott/cloverfield/issues"
   },
-  "homepage": "https://github.com/ericelliott/cloverfield"
+  "homepage": "https://github.com/ericelliott/cloverfield",
+  "dependencies": {
+    "babel": "^5.6.14",
+    "nomnom": "^1.8.1",
+    "prompt": "^0.2.14"
+  },
+  "devDependencies": {
+    "babel-eslint": "^3.1.21",
+    "eslint": "^0.24.0"
+  }
 }
