@@ -32,7 +32,7 @@ Any scaffolds for specific library ecosystems should use the library in the titl
 
 ## Why not Yeoman?
 
-* **Cloverfield** is a tool for eliminating tech choices that don't impact what your app will be so you can concentrate on building **your app**, not **your boilerplate**.
+* **Cloverfield** is a tool for eliminating tech choices that don't impact what your app will be so you can concentrate on building *your app, not your boilerplate*.
 * **Yeoman** is an ecosystem of generators with a CLI hard-coded to tap that ecosystem.
 
 ### Put another way:
