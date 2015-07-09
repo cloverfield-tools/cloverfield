@@ -38,7 +38,6 @@ Any scaffolds for specific library ecosystems should use the library in the titl
 ### Put another way:
 
 * **Yeoman** gives you lots of choices to dig into and investigate.
-
 * **Cloverfield** makes the tooling choices for you, so you can concentrate on making app choices.
 
 
