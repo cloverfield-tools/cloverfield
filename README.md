@@ -30,7 +30,17 @@ Cloverfield should not be strongly tied to any particular framework-of-the-minut
 Any scaffolds for specific library ecosystems should use the library in the title, e.g.: `cf-react-application`
 
 
-## Why do we need yet another boilerplate / generator / scaffoldy thing?
+## Why not Yeoman?
+
+**Cloverfield** is a tool for eliminating tech choices that don't impact what your app will be so you can concentrate on building **your app**, not **your boilerplate**.
+
+**Yeoman** is an ecosystem of generators with a CLI hard-coded to tap that ecosystem.
+
+Put another way:
+
+**Yeoman** gives you lots of choices to dig into and investigate.
+
+**Cloverfield** makes the tooling choices for you, so you can concentrate on making app choices.
 
 The yo generator ecosystem is aging, and the tools used by yo generators don't fit easily into modern JavaScript application workflows. Yeoman backed Bower for front-end tooling instead of looking to the future of universal JavaScript apps and standard ES6 modules packaged on npm. Bower's share of the package repo market is miniscule. It's clear that the future belongs to npm.
 
