@@ -22,6 +22,9 @@ Every project has to start somewhere. So why not start with a project that alrea
 
 Cloverfield should be prescriptive about chosing the right tooling, with an emphasis on flexibility looking into the future. It should help users make good choices that build on web platform standards that will survive long term, not get thrown away with last year's fashions.
 
+* **Modular libraries**, not *monolithic frameworks*
+* **Well maintained default scaffolds** for apps & packages
+
 
 ## What should Cloverfield not be?
 
