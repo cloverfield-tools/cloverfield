@@ -1,9 +1,5 @@
-import test from 'blue-tape';
+import glob from 'glob';
 
 
-test('Cloverfield', (assert) => new Promise((resolve) => {
-  assert.pass('Passed');
-
-  resolve();
-}));
-
+glob.sync('**/*.js', {realpath: true, cwd: __dirname})
+  .forEach(file => console.log(file) || require(file));
