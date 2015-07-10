@@ -36,11 +36,11 @@ Any scaffolds for specific library ecosystems should use the library in the titl
 ## Why not Yeoman?
 
 * **Cloverfield** is a tool for *eliminating tech choices* that don't impact what your app will be so you can concentrate on building *your app, not your boilerplate*.
-* **Yeoman** is an ecosystem of generators with a CLI hard-coded to tap that ecosystem.
+* **Yeoman** is an ecosystem of scaffolds with a CLI hard-coded to tap that ecosystem.
 
 ### Put another way:
 
-* **Yeoman** gives you lots of choices to dig into and investigate.
+* **Yeoman** gives you lots of choices to dig into and investigate, many of them very similar to each other. It's hard to understand which scaffolds you should use.
 * **Cloverfield** makes the tooling choices for you, so you can concentrate on making app choices.
 
 
@@ -50,6 +50,18 @@ The Yeoman ecosystem has **a big signal-to-noise problem**.
 
 The yo generator ecosystem is aging, and the tools used by yo generators don't fit easily into modern JavaScript application workflows. Yeoman backed Bower for front-end tooling instead of looking to the future of universal JavaScript apps with standard ES6 modules packaged on npm. Bower's share of the package repo market is miniscule. It's clear that the future belongs to npm.
 
+Generator discovery is a big problem. With so many different combinations of technology available, which one should you choose? There is no obvious solution, and you will spend a lot of time investigation possibilities which are not good enough.
+
+
+### How will the Cloverfield ecosystem be better?
+
+The Cloverfield ecosystem, by contrast, is small, and we intend to keep it that way. Cloverfield will always officially recommend only a handful of scaffolds, employing what we believe to be the current best practices.
+
+Each scaffold in the Cloverfield scaffold set will be actively maintained.
+
+You're free to develop your own cloverfield scaffolds, and even submit them for inclusion in the core set. However, we will not encourage Cloverfield users to explore unapproved community contributions. Your users will find you via npm search, GitHub, Google, or word-of-mouth.
+
+Eventually we may solve the discovery problem that plagues both Yeoman & npm. Until then, if you choose to explore the community scaffolds, *caveat emptor.*
 
 ---
 
