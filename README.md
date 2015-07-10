@@ -63,6 +63,13 @@ You're free to develop your own cloverfield scaffolds, and even submit them for 
 
 Eventually we may solve the discovery problem that plagues both Yeoman & npm. Until then, if you choose to explore the community scaffolds, *caveat emptor.*
 
+
+#### Doesn't Yeoman Have Official Generators?
+
+Yes, but they haven't aged well, and the Yeoman philosophy is "all contributors welcome". They build discovery into the CLI, and their community ecosystem is large and active. Some might call it "vibrant". We think it's a bit crowded.
+
+If you want to build an Angular 2.0 scaffold, or Ember, Polymer, or the next hot framework that's sure to take over tomorrow, we encourage you to contribute those innovations to the Yeoman ecosystem.
+
 ---
 
 Concieved for ["Learn JavaScript with Eric Elliott"](https://ericelliottjs.com/)
