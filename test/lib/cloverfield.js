@@ -78,7 +78,8 @@ test('Correct option', assert => {
   cloverfield(parser)(commands);
 
   parser.parse(['build', 'package']);
-  assert.ok(commands[0].callback.calledOnce, 'should call provided callback');
+  assert.ok(commands[0].callback.calledOnce,
+    'should run provided callback on command match with correct option');
 
   after({printer});
   assert.end();
