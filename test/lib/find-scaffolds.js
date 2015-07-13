@@ -74,16 +74,16 @@ test('Find Scaffolds success', assert => {
 
 
   // Emulate successfull load response
-  const loadSuccess = load.getCall(0).args[1];
+  const loadCallback = load.getCall(0).args[1];
 
-  loadSuccess(null);
+  loadCallback(null);
 
   assert.ok(npm.commands.ls.calledOnce, 'npm.commands.ls should be called');
 
 
-  const lsSuccess = npm.commands.ls.getCall(0).args[2];
+  const lsCallback = npm.commands.ls.getCall(0).args[2];
 
-  lsSuccess(null, {dependencies});
+  lsCallback(null, {dependencies});
 
   return promise
     .then(scaffolds => {
@@ -98,10 +98,10 @@ test('Find Scaffolds success', assert => {
 test('Find Scaffolds fail on npm.init', assert => {
   const {load} = before();
   const promise = findScaffolds();
-  const loadError = load.getCall(0).args[1];
+  const loadCallback = load.getCall(0).args[1];
 
 
-  loadError(new Error('Oops'));
+  loadCallback(new Error('Oops'));
 
 
   return promise
@@ -116,14 +116,14 @@ test('Find Scaffolds fail on npm.init', assert => {
 test('Find Scaffolds fail on npm.commands.ls', assert => {
   const {load} = before();
   const promise = findScaffolds();
-  const loadSuccess = load.getCall(0).args[1];
+  const loadCallback = load.getCall(0).args[1];
 
-  loadSuccess(null);
+  loadCallback(null);
 
 
-  const lsError = npm.commands.ls.getCall(0).args[2];
+  const lsCallback = npm.commands.ls.getCall(0).args[2];
 
-  lsError(new Error('Oops'));
+  lsCallback(new Error('Oops'));
 
   return promise
     .catch(error => {
