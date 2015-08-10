@@ -72,4 +72,4 @@ If you want to build an Angular 2.0 scaffold, or Ember, Polymer, or the next hot
 
 ---
 
-Concieved for ["Learn JavaScript with Eric Elliott"](https://ericelliottjs.com/)
+Conceived for ["Learn JavaScript with Eric Elliott"](https://ericelliottjs.com/)
