@@ -1,4 +1,4 @@
-# Cloverfield Boilerplate Scaffold Generator
+# Cloverfield Boilerplate Scaffold Generator [![Circle CI](https://circleci.com/gh/cloverfield-tools/cloverfield.svg?style=svg)](https://circleci.com/gh/cloverfield-tools/cloverfield)
 
 Cloverfield aims to create a greenfield, next generation JavaScript project boilerplate scaffolding tool. That means we'll use the tools that coders in-the-know will be using over the next 1 - 3 years. We're starting with the 2016 edition. [Read more](https://github.com/ericelliott/cloverfield/blob/master/README.md).
 
