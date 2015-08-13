@@ -4,8 +4,8 @@
   "description": "A next generation JavaScript project boilerplate",
   "main": "index.js",
   "bin": {
-    "cloverfield": "index.js",
-    "cf": "index.js"
+    "cloverfield": "build/cli.js",
+    "cf": "build/cli.js"
   },
   "scripts": {
     "lint": "eslint .",
@@ -17,7 +17,11 @@
     "validate-dev": "npm run lint && npm test | faucet",
     "audit": "nsp package",
     "precheck": "npm run validate",
-    "check": "npm run audit && npm outdated --depth 0"
+    "check": "npm run audit && npm outdated --depth 0",
+    "build": "npm run build:clean && npm run build:lib",
+    "build:clean": "rimraf build",
+    "build:lib": "babel lib --out-dir build",
+    "prepublish": "npm run build"
   },
   "pre-commit": [
     "lint"

@@ -1,0 +1,8 @@
+lib
+coverage
+test
+.babelrc
+.eslintignore
+.gitignore
+circle.yml
+.jshint*
