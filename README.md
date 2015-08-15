@@ -50,7 +50,7 @@ The Yeoman ecosystem has **a big signal-to-noise problem**.
 
 The yo generator ecosystem is aging, and the tools used by yo generators don't fit easily into modern JavaScript application workflows. Yeoman backed Bower for front-end tooling instead of looking to the future of universal JavaScript apps with standard ES6 modules packaged on npm. Bower's share of the package repo market is miniscule. It's clear that the future belongs to npm.
 
-Generator discovery is a big problem. With so many different combinations of technology available, which one should you choose? There is no obvious solution, and you will spend a lot of time investigation possibilities which are not good enough.
+Generator discovery is a big problem. With so many different combinations of technology available, which one should you choose? There is no obvious solution, and you will spend a lot of time investigating possibilities which are not good enough.
 
 
 ### How will the Cloverfield ecosystem be better?
