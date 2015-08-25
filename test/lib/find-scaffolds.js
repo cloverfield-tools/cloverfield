@@ -3,7 +3,7 @@ import npm from 'npm';
 import {stub, spy} from 'sinon';
 
 
-import findScaffolds from '../../lib/find-scaffolds';
+import {findLocal, findGlobal} from '../../lib/find-scaffolds';
 
 
 const dependencies = {
@@ -36,6 +36,11 @@ const dependencies = {
     name: 'incorrectly-tagged',
     realPath: 'incorrectly-tagged realpath',
     keywords: ['cloverfield', 'something else']
+  },
+  packageWithoutName: {
+    // should skip this because it does not have a name
+    realPath: 'package-without-name realpath',
+    keywords: ['cloverfield', 'scaffold']
   }
 };
 
@@ -58,22 +63,52 @@ const after = () => {
 };
 
 
-test('Find Scaffolds success', assert => {
+test('Find Scaffolds API', assert => {
+  before();
 
+
+  assert.ok(findGlobal instanceof Function, 'should be function');
+  assert.ok(findGlobal() instanceof Promise, 'should return Promise');
+
+
+  after();
+  assert.end();
+});
+
+
+test('Search for global Scaffolds', assert => {
   const {load} = before();
 
-  assert.ok(findScaffolds instanceof Function, 'should be function');
+
+  findGlobal();
+  assert.equal(load.getCall(0).args[0].global, true, 'should call npm.init with global flag');
 
 
-  const promise = findScaffolds();
+  after();
+  assert.end();
+});
 
-  assert.ok(promise instanceof Promise, 'should return Promise');
 
+test('Search for local Scaffolds', assert => {
+  const {load} = before();
+
+
+  findLocal();
+  assert.equal(load.getCall(0).args[0].global, false, 'should call npm.init without global flag');
+
+
+  after();
+  assert.end();
+});
+
+
+test('Finding Scaffolds', assert => {
+  const {load} = before();
+  const promise = findGlobal();
 
   assert.ok(load.calledOnce, 'npm.init should be called');
 
-
-  // Emulate successfull load response
+  // Emulate successful load response
   const loadCallback = load.getCall(0).args[1];
 
   loadCallback(null);
@@ -97,7 +132,7 @@ test('Find Scaffolds success', assert => {
 
 test('Find Scaffolds fail on npm.init', assert => {
   const {load} = before();
-  const promise = findScaffolds();
+  const promise = findGlobal();
   const loadCallback = load.getCall(0).args[1];
 
 
@@ -115,7 +150,7 @@ test('Find Scaffolds fail on npm.init', assert => {
 
 test('Find Scaffolds fail on npm.commands.ls', assert => {
   const {load} = before();
-  const promise = findScaffolds();
+  const promise = findGlobal();
   const loadCallback = load.getCall(0).args[1];
 
   loadCallback(null);
