@@ -1,9 +1,8 @@
 import test from 'blue-tape';
-import npm from 'npm';
-import {stub, spy} from 'sinon';
+import {spy} from 'sinon';
 
 
-import findScaffolds from '../../lib/find-scaffolds';
+import {findLocal, findGlobal} from '../../lib/find-scaffolds';
 
 
 const dependencies = {
@@ -36,45 +35,67 @@ const dependencies = {
     name: 'incorrectly-tagged',
     realPath: 'incorrectly-tagged realpath',
     keywords: ['cloverfield', 'something else']
+  },
+  packageWithoutName: {
+    // should skip this because it does not have a name
+    realPath: 'package-without-name realpath',
+    keywords: ['cloverfield', 'scaffold']
   }
 };
 
 
-const before = () => {
-  // Stubs
-  const load = spy();
-
-  stub(npm, 'load', load);
-  npm.commands = {
-    ls: spy()
+const mockNpm = () => {
+  const npm = {
+    load: spy(),
+    commands: {
+      ls: spy()
+    }
   };
 
-  return {load};
+  return {npm};
 };
 
 
-const after = () => {
-  npm.load.restore();
-};
+test('Find Scaffolds API', assert => {
+  const {npm} = mockNpm();
+
+  assert.ok(findGlobal(npm) instanceof Function, 'should be function');
+  assert.ok(findGlobal(npm)() instanceof Promise, 'should return Promise');
+
+  assert.end();
+});
 
 
-test('Find Scaffolds success', assert => {
+test('Search for global Scaffolds', assert => {
+  const {npm} = mockNpm();
 
-  const {load} = before();
+  findGlobal(npm)();
+  assert.equal(npm.load.getCall(0).args[0].global, true, 'should call npm.init with global flag');
 
-  assert.ok(findScaffolds instanceof Function, 'should be function');
-
-
-  const promise = findScaffolds();
-
-  assert.ok(promise instanceof Promise, 'should return Promise');
+  assert.end();
+});
 
 
-  assert.ok(load.calledOnce, 'npm.init should be called');
+test('Search for local Scaffolds', assert => {
+  const {npm} = mockNpm();
+
+  findLocal(npm)();
+  assert.equal(npm.load.getCall(0).args[0].global,
+    false,
+    'should call npm.init without global flag');
+
+  assert.end();
+});
 
 
-  // Emulate successfull load response
-  const loadCallback = load.getCall(0).args[1];
+test('Finding Scaffolds', assert => {
+  const {npm} = mockNpm();
+  const promise = findGlobal(npm)();
+
+  assert.ok(npm.load.calledOnce, 'npm.init should be called');
+
+  // Emulate successful load response
+  const loadCallback = npm.load.getCall(0).args[1];
 
   loadCallback(null);
 
@@ -90,15 +111,14 @@ test('Find Scaffolds success', assert => {
       assert.ok(scaffolds, 'find-scaffold should resolve with found scaffolds');
       assert.deepEqual(Object.keys(scaffolds), ['test', 'tagged1', 'tagged2'],
         'should return correctly matched scaffolds');
-    })
-    .then(after);
+    });
 });
 
 
 test('Find Scaffolds fail on npm.init', assert => {
-  const {load} = before();
-  const promise = findScaffolds();
-  const loadCallback = load.getCall(0).args[1];
+  const {npm} = mockNpm();
+  const promise = findGlobal(npm)();
+  const loadCallback = npm.load.getCall(0).args[1];
 
 
   loadCallback(new Error('Oops'));
@@ -108,15 +128,14 @@ test('Find Scaffolds fail on npm.init', assert => {
     .catch(error => {
       assert.ok(error instanceof Error, 'should reject with Error');
       assert.equal(error.message, 'Oops', 'should pass-through error message');
-    })
-    .then(after);
+    });
 });
 
 
 test('Find Scaffolds fail on npm.commands.ls', assert => {
-  const {load} = before();
-  const promise = findScaffolds();
-  const loadCallback = load.getCall(0).args[1];
+  const {npm} = mockNpm();
+  const promise = findGlobal(npm)();
+  const loadCallback = npm.load.getCall(0).args[1];
 
   loadCallback(null);
 
@@ -129,6 +148,5 @@ test('Find Scaffolds fail on npm.commands.ls', assert => {
     .catch(error => {
       assert.ok(error instanceof Error, 'should reject with Error');
       assert.equal(error.message, 'Oops', 'should pass-through error message');
-    })
-    .then(after);
+    });
 });
