@@ -1,5 +1,7 @@
 # Cloverfield Boilerplate Scaffold Generator [![Circle CI](https://circleci.com/gh/cloverfield-tools/cloverfield.svg?style=svg)](https://circleci.com/gh/cloverfield-tools/cloverfield)
 
+## Status: Deprecated in favor of AI Driven Development using [SudoLang](https://github.com/paralleldrive/sudolang-llm-support)
+
 Cloverfield aims to create a greenfield, next generation JavaScript project boilerplate scaffolding tool. That means we'll use the tools that coders in-the-know will be using over the next 1 - 3 years. We're starting with the 2016 edition. [Read more](https://github.com/ericelliott/cloverfield/blob/master/README.md).
 
 Please help us decide what this will be by looking at the [open issues](https://github.com/ericelliott/cloverfield/issues).
